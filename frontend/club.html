@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Clubs</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #4a4a4a;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Banner Section */
+        .banner {
+            width: 100%;
+            height: 400px;
+            background: url('https://media.licdn.com/dms/image/D5612AQF1hfsQ0SPRrA/article-cover_image-shrink_600_2000/0/1710995419478?e=2147483647&v=beta&t=Uta0OPAeDlWqlgzUtt34ubEPWg-gUndXzEPbOqoUx80') no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-size: 48px;
+        }
+
+        /* Clubs Section */
+        .clubs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 30px 50px;
+        }
+
+        .club-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .club-card:hover {
+            transform: scale(1.05);
+        }
+
+        .club-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .club-card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .club-card p {
+            color: #777;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            .club-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Green Field Public School</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>  
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faculty.html">Faculty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sports.html">Sports</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Banner Section -->
+    <div class="banner">
+      
+    </div>
+
+    <!-- Clubs Section -->
+    <h1>Explore Our Clubs</h1>
+    <p>We encourage students to explore their interests through a variety of exciting clubs.</p>
+    <div class="clubs">
+        <div class="club-card">
+            <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_3508.jpg" alt="Science Club">
+            <h3>Science Club</h3>
+            <p>Explore the wonders of science with hands-on experiments and activities.</p>
+        </div>
+        <div class="club-card">
+            <img src="https://6e1dc27a.rocketcdn.me/wp-content/uploads/2023/03/art_clubs_kids_kurowska_art_3-a-scaled.webp" alt="Art Club">
+            <h3>Art Club</h3>
+            <p>Unleash your creativity through drawing, painting, and crafting projects.</p>
+        </div>
+        <div class="club-card">
+            <img src="https://c8.alamy.com/comp/APECWT/south-asian-indian-boys-and-girls-performing-fancy-dress-competition-APECWT.jpg" alt="Drama Club">
+            <h3>Drama Club</h3>
+            <p>Showcase your talent through theatre performances and acting workshops.</p>
+        </div>
+        <div class="club-card">
+            <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_3646.jpg" alt="Music Club">
+            <h3>Music Club</h3>
+            <p>Join us to learn and perform different musical instruments and songs.</p>
+        </div>
+        <div class="club-card">
+            <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_4103.jpg" alt="Dance Club">
+            <h3>Dance Club</h3>
+            <p>Express yourself through dance in various styles, from classical to hip-hop.</p>
+        </div>
+        <div class="club-card">
+            <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_3479.jpg" alt="Coding Club">
+            <h3>Sports Club</h3>
+            <p>Stay active and build teamwork through a variety of indoor and outdoor sports.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Green Field Public School. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="js/club.js"></script>
+    <script src="js/api.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports - ABC School</title>
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #343a40;
+  }
+  
+
+  .sports-section {
+    margin-top: 30px;
+  }
+  
+  .sports-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .sport-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .sport-card img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    
+  }
+  
+  .sport-card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .sport-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Green Field Public School School</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+        <li class="nav-item active"><a class="nav-link" href="music.html">Arts & Music</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="sports-section container">
+    <h2 class="text-center mt-5 mb-4">Arts & Music</h2>
+    <div class="sports-grid">
+      <div class="sport-card">
+        <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_3636.jpg" alt="Football">
+        <h3>piano</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_3646.jpg" alt="Basketball">
+        <h3>Guitar</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_3650.jpg" alt="Cricket">
+        <h3>Drums</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://www.vidyagyan.in/sites/default/files/2024-01/internal-infrastructure6.jpg" alt="Tennis">
+        <h3>Violin</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://www.siddharthapublicschools.com/wp-content/uploads/2024/01/MG_4103.jpg" alt="Football">
+        <h3>Bharatanatyam</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://www.danceclassonline.in/images/kuchipudi4.jpg" alt="Basketball">
+        <h3>Kuchipudi</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://vishwankarschool.com/file/wp-content/uploads/2024/01/western-dance-1.jpg" alt="Basketball">
+        <h3>Western Dance</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://www.pencilpark.in/images/page-2_img01_original.jpg" alt="Cricket">
+        <h3>Painting</h3>
+      </div>
+      <div class="sport-card">
+        <img src="https://www.darshancollege.org/programs/program38/DSC06475.JPG" alt="Tennis">
+        <h3>Pencil Skteching</h3>
+      </div>
+      
+    </div>
+  </div>
+
+
+  <footer class="footer bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2024 Green Field Public School. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="js/music.js"></script>
+  <script src="js/api.js"></script>
+</body>
+</html>
